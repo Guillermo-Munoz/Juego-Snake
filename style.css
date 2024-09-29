@@ -1,0 +1,79 @@
+* {
+  font-family: "Playwrite DE Grund", system-ui;
+
+}
+
+.Game {
+  align-content: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 650px;
+  border: 15px solid rgb(46, 126, 255);
+  background-color: rgb(226, 226, 226);
+  border-radius: 30px;
+}
+
+#board,
+boardInfo {
+  max-width: 500px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+
+  border: 5px solid rgb(6, 5, 5);
+}
+
+#start,
+.boardInfo {
+  font-size: 25px
+}
+
+#gameOver {
+  font-size: 30px;
+  font-weight: bold;
+  display: none;
+  justify-content: center;
+
+}
+
+.boardInfo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+
+}
+
+#start {
+  background-color: brown;
+  border: none;
+  color: aliceblue;
+  border-radius: 30%;
+
+}
+
+#scoreBoard {
+  display: inline-flex;
+}
+
+.square {
+  aspect-ratio: 1;
+}
+
+.emptySquare {
+  background-color: rgb(255, 255, 255);
+}
+
+.snakeSquare {
+  background-color: rgb(30, 187, 77);
+}
+
+.foodSquare {
+  background-image: url('img/mosca.png');
+  background-size: contain;
+
+
+  background-color: rgb(255, 255, 255);
+}
